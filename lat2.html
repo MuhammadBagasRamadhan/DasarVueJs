@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang = "en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title> Hello world</title>
+</head>
+<body>
+  <div id= "app" >
+    <p>{{ greet(" Bagass") }}</p>
+  </div>
+    <div id= "app2" >
+      <a v-bind:href="url">Tap here!</a>
+    </div>
+    <script>
+        var app = new Vue ({
+    el :"#app",
+    methods :{
+        greet: function(name){
+            return 'Good morning'+ name;
+        }
+    }
+})
+      var app = new Vue ({
+    el :"#app2",
+    data:{
+      "url": "https://www.instagram.com/bagas_ysp/"
+    }  
+    })
+    </script>
+</body>
+</html>
